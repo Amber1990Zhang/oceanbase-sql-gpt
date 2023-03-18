@@ -10,7 +10,10 @@ class MyDocument extends Document {
             name="description"
             content="Generate your OceanBase SQL in seconds."
           />
-          <meta property="og:site_name" content="sql.amber-moe.io" />
+          <meta 
+            property="og:site_name" 
+            content="sql.amber-moe.io" 
+          />
           <meta
             property="og:description"
             content="Generate your OceanBase SQL in seconds."
@@ -20,7 +23,7 @@ class MyDocument extends Document {
           <meta name="twitter:title" content="OceanBase SQL Generator" />
           <meta
             name="twitter:description"
-            content="Generate your OceanBase SQL in seconds.
+            content="Generate your OceanBase SQL in seconds."
           />
           <meta
             property="og:image"
