@@ -9,8 +9,6 @@ import Header from "../components/Header";
 import LoadingDots from "../components/LoadingDots";
 import { AnimatePresence, motion } from "framer-motion";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
-
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
