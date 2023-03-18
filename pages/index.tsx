@@ -22,7 +22,7 @@ const Home: NextPage = () => {
    `Generate OceanBase SQL with comments based on provided schema and description.
    For OceanBase SQL Requirements:
 
-   1. If describing copywriting, you need to add '/*' in front and add '*/' in back to indicate annotation information.
+   1. To use multiple line comments in your SQL, start with '#' . Any text between  '#' will be ignored (will not be executed).
    2. DO NOT use SQL "SELECT ... FOR SHARE ..." syntax.
    3. DO NOT use SQL "SHOW WARNINGS" syntax.
    
@@ -40,8 +40,7 @@ const Home: NextPage = () => {
    Get 5 users whose first name contains 'Amber', case-insensitive.
 
    SQL:
-
-   /* Get 5 users whose first name contains 'Amber', case-insensitive. */
+   # Get 5 users whose first name contains 'Amber', case-insensitive. 
    SELECT * 
    FROM Users 
    WHERE LOWER(FirstName) LIKE '%amber%';
@@ -110,7 +109,7 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate OceanBase SQL
+          Generate Your OceanBase SQL With Chat-GPT
         </h1>
         {/* <p className="text-slate-500 mt-5">10,312 queries generated so far.</p> */}
         <div className="max-w-xl w-full">
@@ -123,7 +122,7 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Write your schema
+              Provide your schema here
               {/* <span className="text-slate-500">
                 (or drop your DDL queries)
               </span> */}
