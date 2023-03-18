@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
-import DropDown, { VibeType } from "../components/DropDown";
 import Footer from "../components/Footer";
 import Github from "../components/GitHub";
 import Header from "../components/Header";
