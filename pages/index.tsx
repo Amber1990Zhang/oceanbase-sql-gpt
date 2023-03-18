@@ -39,7 +39,7 @@ const Home: NextPage = () => {
    Description:
    Get 5 users whose first name contains 'Amber', case-insensitive.
 
-   SQL:
+   SQL example:
    # Get 5 users whose first name contains 'Amber', case-insensitive. 
    SELECT * 
    FROM Users 
