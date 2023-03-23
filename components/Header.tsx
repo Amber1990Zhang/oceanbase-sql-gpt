@@ -1,15 +1,15 @@
-import { useEffect } from 'react';
-import { useRouter } from 'next/router';
-import ReactGA from 'react-ga';
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+import ReactGA from "react-ga";
 
-function Header() {
+export default function Header() {
   const router = useRouter();
 
   useEffect(() => {
     // Initialize Google Analytics with your tracking ID
-    ReactGA.initialize('G-DEWJBLD2BG');
+    ReactGA.initialize("G-DEWJBLD2BG");
 
     // Record a pageview for the current page
     ReactGA.pageview(router.pathname);
